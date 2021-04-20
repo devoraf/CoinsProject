@@ -1,0 +1,186 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  padding-top: 40px;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh; 
+  background: rgb(191, 150, 93); 
+} 
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background:white; 
+}
+
+.card-deck {
+  padding: 40px ;
+  background: rgb(191, 150, 93);
+}
+
+.card {
+  height: 15rem;
+  /* width: 25rem; */
+  min-width: 18rem;
+  max-width: 25rem;
+  margin-top: 15px;
+  background: #424951;
+}
+
+.card_info {
+  position: absolute;
+  left: 20px;
+  top: 130px; 
+}
+
+.card_toggle {
+  position: absolute;
+  right: 20px;
+  top: 130px;
+}
+.spinner-border {
+  position: relative;
+}
+
+.col.card {
+  background: rgb(66, 73, 81);
+  height:12rem;  
+  width: 18rem;
+  margin: 10px;
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 5px;
+}
+
+.slider.round:before {
+border-radius: 20%;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("imgs/parallax_img.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  height: 300px;
+  background-color:rgb(52, 58, 64);
+ }
+
+.welcome span {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.switch, .modalSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input, .modalSwitch input { 
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: rgb(255, 193, 7);
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+#chartContainer {
+  height: 400px; 
+  width: 90%;
+  padding: 40px;  
+}
+
+#scrollbar{
+  width:250px;
+  height: 50px;
+  padding: 15px;
+  display: inline-block
+}
+
+.card-footer {
+  background: #424951;
+}
+
+.aboutContainer, .chartError {  
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width:100vw;
+  height: 100vh;
+}
+
+.aboutContent {
+  margin: auto;
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
+.error {
+  margin: auto;
+  text-align: center;
+  color: red;
+  font-size: 14pt;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-content: center;
+}
+
